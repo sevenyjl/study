@@ -87,3 +87,24 @@ public class TestController {
 4.使用promsq进行查看
 
 ![image-20210324143631045](05晋级-springboot的自定义监控指标图片/image-20210324143631045.png)![image-20210324143703347](05晋级-springboot的自定义监控指标图片/image-20210324143703347.png)
+
+5.总结
+
+1. 自定义指标需要用到`MeterRegistry`类，注入即可
+
+2. 指标类型：
+
+   ```java
+   meterRegistry.counter = registry.counter("counter");
+   counter.increment();//负责计数，会自增1
+   meterRegistry.summer
+   meterRegistry.timmer//Timer(计时器)适用于记录耗时比较短的事件的执行时间，通过时间分布展示事件的序列和发生频率。所有的Timer的实现至少记录了发生的事件的数量和这些事件的总耗时，从而生成一个时间序列。
+   meterRegistry.gauge//Gauge(仪表)是获取当前度量记录值的句柄，也就是它表示一个可以任意上下浮动的单数值度量Meter。Gauge通常用于变动的测量值，测量值用ToDoubleFunction参数的返回值设置，如当前的内存使用情况，同时也可以测量上下移动的”计数”，比如队列中的消息数量。
+   meterRegistry.summary//总和
+   ```
+
+3. 结合AOP更方便实现自定义指标
+
+> 更多参考：https://prometheus.io/docs/introduction/overview/
+>
+> demo：
