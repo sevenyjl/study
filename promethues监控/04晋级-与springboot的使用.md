@@ -37,6 +37,10 @@ management:
   - targets: ['127.0.0.1:10081']
 ```
 
+prometheus启动命令添加参数 --web.enable-lifecycle
+
+然后热重启：curl -XPOST http://localhost:9090/-/reload 
+
 ## 4.校验查看
 
 ![image-20210323180827292](04晋级-与springboot的使用图片/image-20210323180827292.png)
