@@ -2,7 +2,7 @@
 
 @echo off & title node js 快速安装器 by seven
  
-:: 管理员启动
+ :: 管理员启动
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
 if '%errorlevel%' NEQ '0' (
 goto UACPrompt
@@ -20,7 +20,9 @@ if exist "%temp%\getadmin.vbs" ( del "%temp%\getadmin.vbs" )
 set Url=https://cdn.npm.taobao.org/dist/node/v14.16.0/node-v14.16.0-x64.msi
  
 ::设置文件保存目录，若下载至当前目录，请留空
-set Save=./
+set Save=%~dp0
+cd %Save% & %~d0
+
 if exist %Save% (echo 位置：%Save%) else (mkdir %Save% & echo 已创建：%Save%)
 
 for %%a in ("%Url%") do set "FileName=%%~nxa"

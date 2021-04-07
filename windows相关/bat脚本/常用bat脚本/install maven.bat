@@ -1,8 +1,8 @@
 ::  https://cdn.npm.taobao.org/dist/node/v14.16.0/node-v14.16.0-x64.msi
 
-@echo off & title mysql 快速安装器 by seven
- 
- :: 管理员启动
+@echo off & title maven 快速安装器 by seven
+
+:: 管理员启动
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
 if '%errorlevel%' NEQ '0' (
 goto UACPrompt
@@ -15,12 +15,14 @@ exit /B
 :gotAdmin
 if exist "%temp%\getadmin.vbs" ( del "%temp%\getadmin.vbs" )
 
-::设置要下载的文件链接。必写项。
-set Url=http://mirrors.sohu.com/mysql/MySQL-8.0/mysql-8.0.11-winx64.msi
- 
-::设置文件保存目录，若下载至当前目录，请留空
 set Save=%~dp0
 cd %Save% & %~d0
+
+
+::设置要下载的文件链接。必写项。
+set Url=https://mirrors.tuna.tsinghua.edu.cn/apache/maven/maven-3/3.8.1/binaries/apache-maven-3.8.1-bin.zip
+ 
+::设置文件保存目录，若下载至当前目录，请留空
 
 if exist %Save% (echo 位置：%Save%) else (mkdir %Save% & echo 已创建：%Save%)
 echo ==  开始下载，请耐心等待...  ==
@@ -49,6 +51,13 @@ DownloadFile.vbs "%Url%" "%Save%\%FileName%"
 :: 安装
 :beginInstall
 del DownloadFile.vbs
-echo 默认安装一直next即可
-if exist "%Save%\%FileName%" (echo 安装：%Save%\%FileName% 请稍等，可能需要您手动确认安装 & cd %Save% & %FileName% ) else (echo 异常：%Save%\%FileName% 文件不存在或被损坏！)
+rem 解压
+echo 请手动解压到当前路径，解压完再继续
+set maven_home=%Save%\%FileName:~0,-8%
+pause
+
+:: 添加环境变量 MAVEN_HOME
+setx /M MAVEN_HOME %maven_home%
+echo 添加环境成功
+todo mvn 环境检测
 pause
