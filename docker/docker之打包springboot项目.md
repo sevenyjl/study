@@ -16,6 +16,10 @@
    # 设置镜像作者
    MAINTAINER seven
    # VOLUME 设置容器的挂载卷
+   #设置环境信息
+   ENV TZ Asia/Shanghai
+   ENV LANG C.UTF-8
+   ENV DEBIAN_FRONTEND noninteractive
    VOLUME /tmp
    # 编译时复制文件到镜像中
    ADD demo-docker-0.0.1-SNAPSHOT.jar test.jar
