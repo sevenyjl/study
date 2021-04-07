@@ -25,9 +25,9 @@ set Url=https://mirrors.tuna.tsinghua.edu.cn/apache/maven/maven-3/3.8.1/binaries
 ::设置文件保存目录，若下载至当前目录，请留空
 
 if exist %Save% (echo 位置：%Save%) else (mkdir %Save% & echo 已创建：%Save%)
-echo ==  开始下载，请耐心等待...  ==
 for %%a in ("%Url%") do set "FileName=%%~nxa"
 if not defined Save set "Save=%cd%"
+if exist "%Save%\%FileName%" (echo 下载完成：%Save%\%FileName% & goto beginInstall) else (echo 下载：%FileName% 请等待,下载路径：%Save%)
 (if exist "%Save%\%FileName%" (goto beginInstall)
 echo Download Wscript.Arguments^(0^),Wscript.Arguments^(1^)
 echo Sub Download^(url,target^)
@@ -44,20 +44,33 @@ echo   ado.Write http.responseBody
 echo   ado.SaveToFile target
 echo   ado.Close
 echo End Sub)>DownloadFile.vbs
-if exist "%Save%\%FileName%" (echo 位置：%Save%\%FileName% & goto beginInstall) else (echo 下载：%FileName% 请等待,下载路径：%Save%)
 DownloadFile.vbs "%Url%" "%Save%\%FileName%"
-::del DownloadFile.vbs
+del DownloadFile.vbs
 
 :: 安装
 :beginInstall
-del DownloadFile.vbs
-rem 解压
-echo 请手动解压到当前路径，解压完再继续
-set maven_home=%Save%\%FileName:~0,-8%
-pause
+echo ====解压程序 "C:\Program Files\WinRAR\WinRAR.exe"
+rem 解压 todo 有风险
+if exist "C:\Program Files\WinRAR\WinRAR.exe" ( goto :jy ) else (
+	call "静默安装winrar.bat"
+)
 
+:jy
+set maven_home=%Save%\%FileName:~0,-8%
+echo == 开始解压缩 "%Save%\%FileName%" ==
+if exist "%maven_home%" (
+	goto :setting
+)else (
+	"C:\Program Files\WinRAR\WinRAR.exe" x %FileName%
+)
+:setting
 :: 添加环境变量 MAVEN_HOME
-setx /M MAVEN_HOME %maven_home%
+
+setx MAVEN_HOME "%maven_home%" -M
+setx PATH "%%MAVEN_HOME%%\bin;%PATH%;" -M
+
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v "MAVEN_HOME" /d "%maven_home%" /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v "PATH" /d "%%MAVEN_HOME%%\bin;%PATH%" /f
+call mvn -v
 echo 添加环境成功
-todo mvn 环境检测
 pause
