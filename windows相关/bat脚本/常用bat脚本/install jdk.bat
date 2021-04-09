@@ -1,11 +1,26 @@
 :: 安装jdk
 @echo off & title jdk 快速安装器 by seven
 
+:: 管理员启动
+>nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
+if '%errorlevel%' NEQ '0' (
+goto UACPrompt
+) else ( goto gotAdmin )
+:UACPrompt
+echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
+echo UAC.ShellExecute "%~s0", "", "", "runas", 1 >> "%temp%\getadmin.vbs"
+"%temp%\getadmin.vbs"
+exit /B
+:gotAdmin
+if exist "%temp%\getadmin.vbs" ( del "%temp%\getadmin.vbs" )
 
+rem 获取当前脚本目录，这个目录将会做个下载文件存储目录
+set Save=%~dp0
+rem 进入当前脚本目录磁盘
+cd %Save% & %~d0
 
 set Save=%~dp0
 cd %Save% & %~d0
-dir 
 
 if /i %PROCESSOR_IDENTIFIER:~0,3%==x86 (
     echo 32位操作系统
@@ -97,10 +112,18 @@ echo ++ CTRL+C 退出程序		++
 echo 安装地址%jdk_path%
 :: 设置环境变量
 setx JAVA_HOME "%jdk_path%" -M
-setx PATH "%%JAVA_HOME%%\bin;%PATH%;" -M
-
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v "JAVA_HOME" /d "%jdk_path%" /f
-reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v "PATH" /d "%JAVA_HOME%\bin;%PATH%" /f
 
+
+:: 判断环境
+set str=%PATH%
+set matchStr=%JAVA_HOME
+if not "x!str:%%=!"=="x%str%" (
+    echo Y
+) else (
+    echo N
+	setx PATH "%matchStr%%\bin;%PATH%;" -M
+	reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v "PATH" /d "%matchStr%%\bin;%PATH%" /f
+)
 
 pause

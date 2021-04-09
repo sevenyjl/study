@@ -1,4 +1,5 @@
 *.zip
 *.msi
 *.exe
+!curl*.exe
 apache-*
