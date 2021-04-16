@@ -15,8 +15,8 @@ https://github.com/goharbor/harbor/releases
 前置条件
 
 ```shell
-sudo yum install docker
-sudo yum install docker-compose
+sudo yum install docker -y
+sudo yum install docker-compose -y
 ```
 
 解压
