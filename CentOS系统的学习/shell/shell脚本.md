@@ -258,3 +258,49 @@ echo $(pwd)
 # 执行
 ```
 
+9、通用springboot nacos run.sh
+
+```shell
+
+cd -P -- $(dirname -- "$0")
+nacos_server=10.201.81.1:8840
+nacos_namespace=kipf-dev
+nacos_group=DEFAULT_GROUP
+service_name=gscheduler-server
+# 应当先查询端口占用情况
+case $1 in
+""){
+	sh ./run.sh restart
+};;
+"start"){
+	echo "start " $service_name
+	nohup java -jar -Dspring.cloud.nacos.server-addr=$nacos_server -Dspring.cloud.nacos.config.namespace=$nacos_namespace -Dspring.cloud.nacos.config.group=$nacos_group -Dspring.cloud.nacos.discovery.namespace=$nacos_namespace -DLOG_PATH=$(pwd) $(pwd)/${service_name}*.jar >  $(pwd)/${service_name}.out 2> $(pwd)/${service_name}.err < /dev/null &
+	sh ./run.sh status
+};;
+"restart"){
+        echo "restart ${service_name}"
+	sh ./run.sh stop
+	sh ./run.sh start
+};;
+"stop"){
+	echo "stop Gsnow"
+	service_pid=`ps -ef | grep java | grep $service_name*.jar | grep -v grep  | awk '{print $2}'`
+	if [  -n  "$service_pid"  ]; then
+        	kill -9 $service_pid
+        	printf "杀死进程：%s\n" "$service_pid"
+	else
+		printf "杀死失败:%s\n" $service_name
+	fi
+};;
+"status"){
+	echo "${service_name} status"
+	service_pid=`ps -ef | grep java | grep $service_name*.jar | grep -v grep  | awk '{print $2}'`
+	if [  -n  "$service_pid"  ]; then
+            printf "%s服务运行中\t进程:%s\n" $service_name "$service_pid"
+	else
+            printf "无%s服务:%s\n" $service_name
+	fi
+};;
+esac
+```
+
