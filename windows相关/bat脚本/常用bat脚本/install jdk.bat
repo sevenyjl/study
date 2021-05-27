@@ -118,7 +118,7 @@ reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Env
 :: 判断环境
 set str=%PATH%
 set matchStr=%JAVA_HOME
-if not "x!str:%%=!"=="x%str%" (
+if not "x!str:%matchStr%=!"=="x%str%" (
     echo Y
 ) else (
     echo N
@@ -126,4 +126,10 @@ if not "x!str:%%=!"=="x%str%" (
 	reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v "PATH" /d "%matchStr%%\bin;%PATH%" /f
 )
 
+echo [Y] 重启系统
+echo [N] 不重启系统
+set /p reboot_flag=确认要重启系统吗？（Y/N）
+if %reboot_flag% == Y(
+    shutdown -r -t 0
+)
 pause

@@ -118,25 +118,33 @@ if exist "C:\Program Files\WinRAR\WinRAR.exe" (
 	"C:\Program Files\WinRAR\WinRAR.exe" x -o+ %Save%\%name%-bin.zip
 )
 if exist "C:\Program Files (x86)\WinRAR\WinRAR.exe" (
-	"C:\Program Files\WinRAR\WinRAR.exe" x -o+ %Save%\%name%-bin.zip
+	"C:\Program Files (x86)\WinRAR\WinRAR.exe" x -o+ %Save%\%name%-bin.zip
 )
 echo ==	解压完成
 :: 设置环境变量
-setx MAVEN_HOME "%Save%\%name%" -M
-reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v "MAVEN_HOME" /d "%home%" /f
+setx MAVEN_HOME "%Save%%name%" -M
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v "MAVEN_HOME" /d "%Save%%name%" /f
 :: 判断环境
 set str=%PATH%
 set matchStr=%MAVEN_HOME
-if not "x!str:%%=!"=="x%str%" (
+:: todo 这个判断有问题
+if not "x!str:%matchStr%=!"=="x%str%" (
     echo Y
 ) else (
     echo N
-	setx PATH "%matchStr%%\bin;%PATH%;" -M
-	reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v "PATH" /d "%matchStr%%\bin;%PATH%" /f
+	call setx PATH "%matchStr%%\bin;%PATH%;" -M
+	call reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v "PATH" /d "%matchStr%%\bin;%PATH%" /f
 )
 :: 设置阿里镜像
 echo ==	设置阿里加速镜像 %Save%\settings-ali.xml
 move %Save%\%name%\conf\settings.xml %Save%\%name%\conf\settings.xml.bak
 copy %Save%\settings-ali.xml %Save%\%name%\conf\settings.xml
 echo ==	设置成功
+
+echo [Y] 重启系统
+echo [N] 不重启系统
+set /p reboot_flag=确认要重启系统吗？（Y/N）
+if %reboot_flag% == Y(
+    shutdown -r -t 0
+)
 pause
