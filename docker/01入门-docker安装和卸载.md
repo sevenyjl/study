@@ -7,6 +7,8 @@
 ## 安装
 
 > 参考：https://blog.csdn.net/somken/article/details/105863921
+>
+> 参考：https://blog.csdn.net/lettuce_/article/details/103821200
 
 yum-utils提供了yum-config-manager 效用，并device-mapper-persistent-data和lvm2由需要 devicemapper 存储驱动程序。
 
