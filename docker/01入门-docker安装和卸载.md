@@ -46,7 +46,7 @@ sudo yum -y install docker-ce docker-ce-cli containerd.io
 sudo tee /etc/docker/daemon.json <<-'EOF'
 {
     "insecure-registries":[
-        "10.202.41.81:7001"
+        "10.202.42.247:7001"
     ],
     "registry-mirrors":[
         "https://v16stybc.mirror.aliyuncs.com"
