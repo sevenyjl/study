@@ -1,3 +1,74 @@
+## 0.一键免密登录+同步文件
+
+```shell
+#1.解析多个ip参数
+pcount=$#
+if((pcount==0)); then
+echo no args;
+exit;
+fi
+#下载分发脚本
+sudo yum install rsync -y
+args=$@
+user=`whoami`
+ssh-keygen -t rsa
+#本地免密
+local=$(ip addr | awk '/^[0-9]+: / {}; /inet.*global/ {print gensub(/(.*)\/(.*)/, "\\1", "g", $2)}')
+ssh-copy-id -f $user@$local
+#循环ip参数
+echo -e "--------\n\n\n分发ssh\n\n\n"
+for ip in $args
+do	
+	echo ssh-copy-id -f $user@$ip
+	ssh-copy-id -f $user@$ip
+done
+echo -e "--------\n\n\n安装rsync\n\n\n"
+for ip in $args
+do
+	echo $user@$ip "sudo yum install rsync -y"
+	ssh $user@$ip "sudo yum install rsync -y"
+done
+echo -e "--------\n\n\n同步免密配置\n\n\n"
+for ip in $args
+do
+	echo rsync -rvl ~/.ssh $user@$ip:~/
+	rsync -rvl ~/.ssh $user@$ip:~/
+done
+echo -e "--------\n\n\n创建分发脚本\n\n\n"
+#编辑分发脚本
+mkdir bin
+cat << EOF > ~/bin/xsync
+#!/bin/bash
+#1 获取输入参数个数，如果没有参数，直接退出
+pcount=\$#
+if((pcount==0)); then
+echo no args;
+exit;
+fi
+
+#2 获取文件名称
+p1=\$1
+fname=\`basename \$p1\`
+echo fname=\$fname
+
+#3 获取上级目录到绝对路径
+pdir=\`cd -P \$(dirname \$p1); pwd\`
+echo pdir=\$pdir
+
+#4 获取当前用户名称
+user=\`whoami\`
+#5 循环，配置分发的ip，或者host
+for ip in $args
+do
+	echo ---- rsync file=\$pdir to \$user@$ip       ------
+	rsync -rvl \$pdir/\$fname \$user@$ip:\$pdir
+done
+EOF
+chmod 777 ~/bin/xsync
+# 分发同步脚本
+xsync ~/bin/xsync
+```
+
 ==注意配置==
 
 1）修改/etc/profile文件：用来设置系统环境参数，比如$PATH. 这里面的环境变量是对系统内所有用户生效。使用bash命令，需要source  /etc/profile一下。
