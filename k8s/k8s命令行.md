@@ -33,7 +33,17 @@
 - 查看pod状况
 
   ```shell
-  kubectl describe pod kipf-brat-d97d77dc9-s5dkz -n del
+  kubectl describe pod <pod-name> -n del
+  ```
+
+- 查看服务日志
+
+  ```shell
+  kubectl logs -f --tail=100 <pod-name> -n web
+  ```
+
+  ```shell
+  kubectl logs -f --tail=100 $(kubectl get pods -n <namesapce> | grep <simple-pod-name> | awk '{print $1}') -n <namesapce>
   ```
 
 - 
