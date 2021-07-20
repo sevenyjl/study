@@ -33,17 +33,29 @@
 - 查看pod状况
 
   ```shell
-  kubectl describe pod <pod-name> -n del
+  kubectl describe pod <pod-name> -n <namesapce>
   ```
 
 - 查看服务日志
 
   ```shell
-  kubectl logs -f --tail=100 <pod-name> -n web
+  kubectl logs -f --tail=100 <pod-name> -n <namesapce>
   ```
 
   ```shell
   kubectl logs -f --tail=100 $(kubectl get pods -n <namesapce> | grep <simple-pod-name> | awk '{print $1}') -n <namesapce>
+  ```
+
+- 查看命名空间依赖资源
+
+  ```shell
+  kubectl api-resources -o name --verbs=list --namespaced | xargs -n 1 kubectl get --show-kind --ignore-not-found -n  <namesapce>
+  ```
+
+- k8s进入pod容器
+
+  ```
+  
   ```
 
 - 
