@@ -2,3 +2,5 @@
 视频/
 *.iml
 .idea
+out
+*.class
