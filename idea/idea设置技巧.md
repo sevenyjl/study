@@ -10,5 +10,9 @@
 
 > 参考：https://blog.csdn.net/lycz_tpself/article/details/76726813
 
-# 2.设置idea侧边栏
+# 3.idea设置同步
+
+Lgz6!fqTY4XY@#K gamil
+
+file -->![image-20210804105437562](idea设置技巧.assets/image-20210804105437562.png)
 
