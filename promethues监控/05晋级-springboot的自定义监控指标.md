@@ -82,11 +82,11 @@ public class TestController {
 
 3.请求查看
 
-![image-20210324143114253](05晋级-springboot的自定义监控指标图片/image-20210324143114253.png)![image-20210324143133211](05晋级-springboot的自定义监控指标图片/image-20210324143133211.png)
+![image-20210324143114253](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210324143114253.png)![image-20210324143133211](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210324143133211.png)
 
 4.使用promsq进行查看
 
-![image-20210324143631045](05晋级-springboot的自定义监控指标图片/image-20210324143631045.png)![image-20210324143703347](05晋级-springboot的自定义监控指标图片/image-20210324143703347.png)
+![image-20210324143631045](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210324143631045.png)![image-20210324143703347](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210324143703347.png)
 
 5.总结
 

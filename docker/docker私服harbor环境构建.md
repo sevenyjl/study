@@ -77,7 +77,7 @@ sh install.sh
 
 默认用户：admin/Harbor123
 
-![image-20210325102350258](docker私服harbor环境构建图片/image-20210325102350258.png)
+![image-20210325102350258](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210325102350258.png)
 
 ## 4.配置docker上传
 
@@ -125,13 +125,13 @@ sudo docker push 私服地址/library/hello-world
 
 4.验证
 
-![image-20210325110547861](docker私服harbor环境构建图片/image-20210325110547861.png)
+![image-20210325110547861](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210325110547861.png)
 
 5.从私服中获取镜像
 
 > 执行步骤4-1修改docker的daemon.json 
 
-![image-20210325110742873](docker私服harbor环境构建图片/image-20210325110742873.png)
+![image-20210325110742873](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210325110742873.png)
 
 ```shell
 sudo docker pull 私服地址/library/hello-world:latest
@@ -152,7 +152,7 @@ docker-compose stop
 docker-compose start
 ```
 
-![image-20210325140037307](docker私服harbor环境构建图片/image-20210325140037307.png)
+![image-20210325140037307](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210325140037307.png)
 
 ## 错误收集
 

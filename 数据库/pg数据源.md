@@ -11,17 +11,17 @@
 
 选择安装目录
 
-![image-20210324205509527](pg数据源.assets/image-20210324205509527.png)
+![image-20210324205509527](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210324205509527.png)
 
-![image-20210324205640638](pg数据源.assets/image-20210324205640638.png)
+![image-20210324205640638](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210324205640638.png)
 
 设置用户名和密码postgres/root，端口默认设置5432
 
-![image-20210324210255189](pg数据源.assets/image-20210324210255189.png)
+![image-20210324210255189](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210324210255189.png)
 
 2.打开navicat
 
-![image-20210324210509296](pg数据源.assets/image-20210324210509296.png)
+![image-20210324210509296](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210324210509296.png)
 
 navicat破解教程见：https://gitee.com/GTeam_seven/study/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6.md
 

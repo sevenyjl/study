@@ -1,6 +1,6 @@
 1中文设置
 
-![image-20210219180846720](vscode起步图片/image-20200407142141626.png)
+![image-20210219180846720](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200407142141626.png)
 
 2安装实用插件
 

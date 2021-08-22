@@ -10,11 +10,11 @@
 
 - 父子工程的maven架构的demo
 
-  结构如下：![image-20210329160012647](maven版本控制图片/image-20210329160012647.png)
+  结构如下：![image-20210329160012647](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210329160012647.png)
 
 - 第三方引用的demo
 
-  ![image-20210329160114860](maven版本控制图片/image-20210329160114860.png)
+  ![image-20210329160114860](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210329160114860.png)
 
 2.maven的pom配置
 

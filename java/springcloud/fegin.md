@@ -1,6 +1,6 @@
 1.Feign单元测试
 
-![image-20210528105822968](fegin图片/image-20210528105822968.png)
+![image-20210528105822968](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210528105822968.png)
 
 ```java
 package com.gs.cd.kmp.api;

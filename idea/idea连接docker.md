@@ -2,7 +2,7 @@
 
 docker
 
-![image-20210317104220857](idea连接docker图片/image-20210317104220857.png)
+![image-20210317104220857](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210317104220857.png)
 
 # 2.开启dockerTCP
 
@@ -38,15 +38,15 @@ sudo systemctl restart docker
 
 编写Dockerfile->点击三角形运行->选择Server->添加dockerServer
 
-![image-20210317104458956](idea连接docker图片/image-20210317104458956.png)
+![image-20210317104458956](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210317104458956.png)
 
-![image-20210317105509183](idea连接docker图片/image-20210317105509183.png)
+![image-20210317105509183](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210317105509183.png)
 
 **注意：TCP Engine API URL要加tcp://。如：tcp://192.168.0.106:2376**
 
 # 5.配置dockerRun
 
-![image-20210317105730267](idea连接docker图片/image-20210317105730267.png)
+![image-20210317105730267](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210317105730267.png)
 
 > docker相关参考文档：
 >

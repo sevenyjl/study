@@ -4,7 +4,7 @@
 
 选择File --->Settings ---> Appearance & Behavior
 
-![image-20210607093734355](idea设置技巧图片/image-20210607093734355.png)
+![image-20210607093734355](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210607093734355.png)
 
 # 2.自定义代码提示
 
@@ -14,5 +14,5 @@
 
 Lgz6!fqTY4XY@#K gamil
 
-file -->![image-20210804105437562](idea设置技巧.assets/image-20210804105437562.png)
+file -->![image-20210804105437562](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210804105437562.png)
 

@@ -2,7 +2,7 @@
 
 dockerfile目录结构：
 
-![image-20210416093802841](03晋级-pipeline一键打包docker并上传图片/image-20210416093802841.png)
+![image-20210416093802841](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210416093802841.png)
 
 运行脚本（仅参考）：
 
@@ -57,7 +57,7 @@ ENTRYPOINT ["/root/kipf_run.sh"]
 
 Jenkins地址：http://10.201.82.253:7001/ 用户：admin/admin
 
-新建项目并选择模板![image-20210416094933469](03晋级-pipeline一键打包docker并上传图片/image-20210416094933469.png)
+新建项目并选择模板![image-20210416094933469](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210416094933469.png)
 
 ## 3.编辑pipeline脚本
 
@@ -147,28 +147,28 @@ pipeline {
 
 参数生成器：
 
-![image-20210416095442824](03晋级-pipeline一键打包docker并上传图片/image-20210416095442824.png)
+![image-20210416095442824](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210416095442824.png)
 
 - git拉取步骤：【请修改credentialsId: 'xxx', url: 'xxx'】：
 
-  ![image-20210416095622717](03晋级-pipeline一键打包docker并上传图片/image-20210416095622717.png)
+  ![image-20210416095622717](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210416095622717.png)
 
 ## 4.运行测试验证
 
-![image-20210416100234322](03晋级-pipeline一键打包docker并上传图片/image-20210416100234322.png)
+![image-20210416100234322](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210416100234322.png)
 
-![image-20210416100548214](03晋级-pipeline一键打包docker并上传图片/image-20210416100548214.png)
+![image-20210416100548214](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210416100548214.png)
 
 访问Harbor:
 
-![image-20210416100625855](03晋级-pipeline一键打包docker并上传图片/image-20210416100625855.png)
+![image-20210416100625855](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210416100625855.png)
 
 ## 问题：
 
 - git信息获取失败
 
-![image-20210416095915397](03晋级-pipeline一键打包docker并上传图片/image-20210416095915397.png)
+![image-20210416095915397](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210416095915397.png)
 
-解决：点击 配置->取消参数化构建![image-20210416100015091](03晋级-pipeline一键打包docker并上传图片/image-20210416100015091.png)->在点击配置->如果出现了新的参数构建点击保存，否则复制pipeline脚本再粘贴保存->点击Build with Parameters![image-20210416100156449](03晋级-pipeline一键打包docker并上传图片/image-20210416100156449.png)
+解决：点击 配置->取消参数化构建![image-20210416100015091](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210416100015091.png)->在点击配置->如果出现了新的参数构建点击保存，否则复制pipeline脚本再粘贴保存->点击Build with Parameters![image-20210416100156449](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210416100156449.png)
 
 - 

@@ -56,11 +56,11 @@
 
    3. 将skywalking下的agent整体复制到 项目路径，方便配置修改启动
 
-      ![image-20210106163335293](skywalking win部署&入门demo图片/image-20210106163335293.png)注意不要动目录结构
+      ![image-20210106163335293](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210106163335293.png)注意不要动目录结构
 
       ==这里有一点，需要注意，skywalking要对spring cloud gateway支持，需要添加个插件==
 
-      ![image-20210106163755373](skywalking win部署&入门demo图片/image-20210106163755373.png)
+      ![image-20210106163755373](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210106163755373.png)
 
    4. 修改一些配置
 
@@ -78,7 +78,7 @@
 
    5. 启动添加参数
 
-      ![image-20210106163836213](skywalking win部署&入门demo图片/image-20210106163836213.png)注意是idea里面agent的路径
+      ![image-20210106163836213](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210106163836213.png)注意是idea里面agent的路径
 
    6. 遗留问题：
 

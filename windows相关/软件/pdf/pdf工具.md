@@ -6,17 +6,17 @@
 
 功能：
 
-pdf->word、pdf->ppt、pdf->img、xxx->pdf、解锁、水印![image-20210322175627174](pdf工具图片/image-20210322175627174.png)
+pdf->word、pdf->ppt、pdf->img、xxx->pdf、解锁、水印![image-20210322175627174](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210322175627174.png)
 
 破解方法：
 
 1. 下载安装
 
-2. 找到C:\Users\你的用户名\AppData\Roaming\**Smallpdf**\preferences.json![image-20210322175431259](pdf工具图片/image-20210322175431259.png)
+2. 找到C:\Users\你的用户名\AppData\Roaming\**Smallpdf**\preferences.json![image-20210322175431259](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210322175431259.png)
 
    搜索：system.trial_duration_limit
 
-   ![image-20210322175502217](pdf工具图片/image-20210322175502217.png)
+   ![image-20210322175502217](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210322175502217.png)
 
 ## 2.编辑pdf工具
 

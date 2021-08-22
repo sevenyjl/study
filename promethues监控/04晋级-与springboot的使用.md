@@ -27,7 +27,7 @@ management:
 
 ## 3.运行并将服务配置到prometheus.yml
 
-![image-20210323180757042](04晋级-与springboot的使用图片/image-20210323180757042.png)
+![image-20210323180757042](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210323180757042.png)
 
 ```yaml
 - job_name: 'demo_prometheus'
@@ -43,11 +43,11 @@ prometheus启动命令添加参数 --web.enable-lifecycle
 
 ## 4.校验查看
 
-![image-20210323180827292](04晋级-与springboot的使用图片/image-20210323180827292.png)
+![image-20210323180827292](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210323180827292.png)
 
 查询
 
-![image-20210323180920804](04晋级-与springboot的使用图片/image-20210323180920804.png)
+![image-20210323180920804](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210323180920804.png)
 
 ## 常用promsql查询
 

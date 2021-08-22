@@ -1,7 +1,7 @@
 1. 下载安装idea 省略
 2. 进入idea界面（免费使用30t进入）
 3. 添加插件库：https://plugins.zhile.io
-4. 搜索插件IDE eval resetter![image-20201230163815737](idea激活教程图片/image-20201230163815737.png)
+4. 搜索插件IDE eval resetter![image-20201230163815737](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20201230163815737.png)
 5. 安装后重启看图点击![image-20201230164022445](idea激活教程图片/image-20201230164022445.png)
-6. ![image-20201230164046993](idea激活教程图片/image-20201230164046993.png)
+6. ![image-20201230164046993](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20201230164046993.png)
 7. 原理：利用idea提供的免费30，到期会reset重置30，就又能开心敲代码啦

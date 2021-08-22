@@ -40,7 +40,7 @@
 
 3. ./bin目录下，管理员运行cmd并执行命令：mysqld --initialize --user=mysql --console
 
-   ![image-20210221122510143](mysql安装.assets/image-20210221122510143.png)初始密码为：**N8Dyjpq+kvz#**需要我们记住它
+   ![image-20210221122510143](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210221122510143.png)初始密码为：**N8Dyjpq+kvz#**需要我们记住它
 
 4. 运行命令：
 

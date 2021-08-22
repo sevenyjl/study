@@ -4,7 +4,7 @@
 
 注册机下载：  [WinRAR.KeyGen.exe](winrar破解.assets\WinRAR.KeyGen.exe) 
 
-1. 打开注册机，点击安装证书(install license)。复制License内容![image-20210519204324593](G:\study\windows相关\软件\zip\winrar破解.assets\image-20210519204324593.png)
+1. 打开注册机，点击安装证书(install license)。复制License内容![image-20210519204324593](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210519204324593.png)
 
 2. 到winrar安装目录
 
@@ -14,9 +14,9 @@
 
 3. 验证
 
-![image-20210519204443677](G:\study\windows相关\软件\zip\winrar破解.assets\image-20210519204443677.png)
+![image-20210519204443677](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210519204443677.png)
 
-![image-20210519204502568](G:\study\windows相关\软件\zip\winrar破解.assets\image-20210519204502568.png)
+![image-20210519204502568](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210519204502568.png)
 
 # 2.移除广告
 
@@ -24,11 +24,11 @@
 
 2. 把winrar.exe拖进去（C:\Program Files (x86)\WinRAR\WinRAR.exe）
 
-3. 删除广告![image-20210519205708368](G:\study\windows相关\软件\zip\winrar破解.assets\image-20210519205708368.png)
+3. 删除广告![image-20210519205708368](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210519205708368.png)
 
-4. 删除后编译![image-20210519205900719](G:\study\windows相关\软件\zip\winrar破解.assets\image-20210519205900719.png)
+4. 删除后编译![image-20210519205900719](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210519205900719.png)
 
-   保存![image-20210519205923176](G:\study\windows相关\软件\zip\winrar破解.assets\image-20210519205923176.png)
+   保存![image-20210519205923176](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210519205923176.png)
 
 5. 打开验证广告就不存在了
 

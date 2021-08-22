@@ -34,7 +34,7 @@ qa-v1.0.1	-->qa-版本
 
 ## 2.开发流程
 
-![image-20210402102219339](gitlab分支权限控制图片/分支开发流程.png)
+![image-20210402102219339](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/分支开发流程.png)
 
 开发者需要从develop-v2.7.1中new新的分支：develop-v2.7.1-开发人名/功能
 
@@ -65,11 +65,11 @@ qa-v1.0.1	-->qa-版本
 
 1. 由Maintainer身份进入git
 
-   ![image-20210402111306627](gitlab分支权限控制图片/image-20210402111306627.png)
+   ![image-20210402111306627](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210402111306627.png)
 
 2. 设置权限
 
-   ![image-20210402111718994](gitlab分支权限控制图片/image-20210402111718994.png)
+   ![image-20210402111718994](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210402111718994.png)
 
 3. 权限设置规范
 
@@ -81,6 +81,6 @@ qa-v1.0.1	-->qa-版本
    | qa-*         | M+D         | push、merge |
    | master       | M           | push、merge |
 
-   ![image-20210402112344717](gitlab分支权限控制图片/image-20210402112344717.png)
+   ![image-20210402112344717](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210402112344717.png)
 
    > 参考文档：https://gitlab.gridsum.com/help/user/project/protected_branches

@@ -16,11 +16,9 @@ GIT简单易学，占地小，并且具有闪电般的性能。它具有SCM工�
 
 [下载地址](https://git-scm.com/downloads)
 
-[安装包](.\git.assets\Git-2.26.2-64-bit.exe)
-
 运行.exe后可以一顿next
 
-![image-20200422094505232](git.assets/image-20200422094505232.png)
+![image-20200422094505232](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422094505232.png)
 
 简单设置
 
@@ -29,7 +27,7 @@ git config --global user.name "seven"
 git config --global user.email "sevenyjl@gmail.com"
 ```
 
-![image-20200422094650357](git.assets/image-20200422094650357.png)
+![image-20200422094650357](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422094650357.png)
 
 ## 3、创建版本库
 
@@ -48,7 +46,7 @@ mkdir repository
 git init
 ```
 
-![image-20200422095431422](git.assets/image-20200422095431422.png)
+![image-20200422095431422](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422095431422.png)
 
 ### 3、使文件受版本控制
 
@@ -63,7 +61,7 @@ Git is free software.
 
 wq:保存
 
-![image-20200422095602978](git.assets/image-20200422095602978.png)
+![image-20200422095602978](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422095602978.png)
 
 告诉git，将文件添加到仓库
 
@@ -72,7 +70,7 @@ git add readme.txt
 git status
 ```
 
-![image-20200422095842200](git.assets/image-20200422095842200.png)
+![image-20200422095842200](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422095842200.png)
 
 提交版本
 
@@ -80,7 +78,7 @@ git status
 git commit -m "备注"
 ```
 
-![image-20200422100019581](git.assets/image-20200422100019581.png)
+![image-20200422100019581](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422100019581.png)
 
 ###  小结
 
@@ -106,7 +104,7 @@ Git is free software.
 
 现在，运行`git status`命令看看结果：
 
-![image-20200422100625869](git.assets/image-20200422100625869.png)
+![image-20200422100625869](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422100625869.png)
 
 查看我的文件被修改了什么
 
@@ -114,7 +112,7 @@ Git is free software.
 git diff readme.txt
 ```
 
-![image-20200422100725262](git.assets/image-20200422100725262.png)
+![image-20200422100725262](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422100725262.png)
 
 ### 小结
 
@@ -131,7 +129,7 @@ git log
 git log --pretty=oneline
 ```
 
-![image-20200422100953414](git.assets/image-20200422100953414.png)
+![image-20200422100953414](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422100953414.png)
 
 版本回退
 
@@ -141,7 +139,7 @@ git log --pretty=oneline
 git reset --hard HEAD^
 ```
 
-![image-20200422101208230](git.assets/image-20200422101208230.png)
+![image-20200422101208230](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422101208230.png)
 
 回退到第二个版本
 
@@ -149,11 +147,11 @@ git reset --hard HEAD^
 git reset --hard 324165
 ```
 
-版本号没必要写全，前几位就可以了，Git会自动去找。当然也不能只写前一两位，因为Git可能会找到多个版本号，就无法确定是哪一个了。![image-20200422101340687](git.assets/image-20200422101340687.png)
+版本号没必要写全，前几位就可以了，Git会自动去找。当然也不能只写前一两位，因为Git可能会找到多个版本号，就无法确定是哪一个了。![image-20200422101340687](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422101340687.png)
 
 果然，我胡汉三又回来了。
 
-![image-20200422101353086](git.assets/image-20200422101353086.png)
+![image-20200422101353086](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422101353086.png)
 
 Git的版本回退速度非常快，因为Git在内部有个指向当前版本的`HEAD`指针，当你回退版本的时候，Git仅仅是把HEAD从指向`append GPL`：
 
@@ -189,7 +187,7 @@ Git的版本回退速度非常快，因为Git在内部有个指向当前版本�
 git reflog
 ```
 
-![image-20200422101617566](git.assets/image-20200422101617566.png)
+![image-20200422101617566](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422101617566.png)
 
 ### 小结
 
@@ -210,29 +208,29 @@ ssh-keygen -t rsa -C "sevenyjl@gmail.com"
 
 一顿回车
 
-![image-20200422103124173](git.assets/image-20200422103124173.png)
+![image-20200422103124173](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422103124173.png)
 
 打开默认保存目录
 
-![image-20200422103224294](git.assets/image-20200422103224294.png)
+![image-20200422103224294](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422103224294.png)
 
 ### 2、配置github
 
 打开**id_rsa.pub** 文件
 
-![image-20200422103259364](git.assets/image-20200422103259364.png)
+![image-20200422103259364](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422103259364.png)
 
 复制这段一会要用
 
 登录到gitHub
 
-![image-20200422103558424](git.assets/image-20200422103558424.png)
+![image-20200422103558424](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422103558424.png)
 
 提交成功
 
-![image-20200422103614541](git.assets/image-20200422103614541.png)
+![image-20200422103614541](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422103614541.png)
 
-在github中创建仓库![image-20200422103909696](git.assets/Snipaste_2020-04-22_10-39-06.png)
+在github中创建仓库![image-20200422103909696](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/Snipaste_2020-04-22_10-39-06.png)
 
 ### 3、上传到github
 
@@ -244,7 +242,7 @@ git remote add repostory git@github.com:sevenyjl/myGit.git
 git push -u repostory master
 ```
 
-![image-20200422104601539](git.assets/image-20200422104601539.png)
+![image-20200422104601539](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422104601539.png)
 
 #### SSH警告
 
@@ -284,41 +282,41 @@ Warning: Permanently added 'github.com' (RSA) to the list of known hosts.
 
 ### 1、检查环境
 
-![image-20200422105257709](git.assets/image-20200422105257709.png)
+![image-20200422105257709](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422105257709.png)
 
 ### 2、登录github账号
 
-![image-20200422112046030](git.assets/image-20200422112046030.png)
+![image-20200422112046030](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422112046030.png)
 
 ### 3、创建本地仓库
 
-![image-20200422112232148](git.assets/image-20200422112232148.png)
+![image-20200422112232148](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422112232148.png)
 
 ![image-20200422112344389](git.assets/image-20200422112344389.png)
 
 ### 4、上传项目到本地仓库
 
-![image-20200422112420900](git.assets/image-20200422112420900.png)
+![image-20200422112420900](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422112420900.png)
 
-![image-20200422112454241](git.assets/image-20200422112454241.png)
+![image-20200422112454241](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422112454241.png)
 
 ### 5、提交到本地仓库
 
-![image-20200422112538621](git.assets/image-20200422112538621.png)
+![image-20200422112538621](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422112538621.png)
 
-![image-20200422112650087](git.assets/image-20200422112650087.png)
+![image-20200422112650087](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422112650087.png)
 
 变为白色说明，同步到本地仓库成功了
 
 ### 6、上传到github上
 
-![image-20200422112910656](git.assets/image-20200422112910656.png)
+![image-20200422112910656](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422112910656.png)
 
-![image-20200422112959655](git.assets/image-20200422112959655.png)
+![image-20200422112959655](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422112959655.png)
 
 去github查看
 
-![image-20200422113143633](git.assets/image-20200422113143633.png)
+![image-20200422113143633](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422113143633.png)
 
 ## 8、同步到码云
 
@@ -326,13 +324,13 @@ Warning: Permanently added 'github.com' (RSA) to the list of known hosts.
 
 1、将公钥添加到码云上
 
-![image-20200422140213974](git.assets/image-20200422140213974.png)
+![image-20200422140213974](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422140213974.png)
 
-![image-20200422140240573](git.assets/image-20200422140240573.png)
+![image-20200422140240573](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422140240573.png)
 
 2、创建仓库
 
-![image-20200422140457276](git.assets/image-20200422140457276.png)
+![image-20200422140457276](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422140457276.png)
 
 3、将git的本地仓库同步到码云上
 
@@ -353,9 +351,9 @@ git remote
 git remote --help
 ```
 
-![image-20200422141007782](git.assets/image-20200422141007782.png)
+![image-20200422141007782](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422141007782.png)
 
-查看![image-20200422141021263](git.assets/image-20200422141021263.png)
+查看![image-20200422141021263](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422141021263.png)
 
 ## 9、idea同步代码到码云
 
@@ -365,15 +363,15 @@ git remote --help
 
 
 
-![image-20200422153231339](git.assets/image-20200422153231339.png)
+![image-20200422153231339](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422153231339.png)
 
-![image-20200422153304399](git.assets/image-20200422153304399.png)
+![image-20200422153304399](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422153304399.png)
 
-![image-20200422153418901](git.assets/image-20200422153418901.png)
+![image-20200422153418901](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422153418901.png)
 
 ## 10、从码云中同步代码到IDEA
 
-![image-20200422200246487](git.assets/image-20200422200246487.png)
+![image-20200422200246487](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200422200246487.png)
 
 GitHub一样
 

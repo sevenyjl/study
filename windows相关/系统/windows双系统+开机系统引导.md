@@ -4,7 +4,7 @@
 
 2. rEFInd：开机引导工具
 
-   ![image-20210219143705465](windows双系统+开机系统引导图片/image-20210219143705465.png)
+   ![image-20210219143705465](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210219143705465.png)
 
 3. *ru*fus：自启动u盘制作工具。用户可以通过该软件快速制作linux系统或者win启动u盘
 

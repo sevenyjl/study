@@ -8,7 +8,7 @@ passwd hadoop
 vim /etc/sudoers
 ```
 
-![image-20200624112514519](hodoop集群搭建.assets/image-20200624112514519.png)
+![image-20200624112514519](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200624112514519.png)
 
 ```
 # 在 /usr/local/ 目录下创建目录：java、hadoop、hive三个目录并分配权限给hadoop用户
@@ -27,7 +27,7 @@ hostname                               #查看当前的 hostnmae
 hostnamectl  set-hostname  master      #永久修改hostname(立即生效）
 ```
 
-![image-20200624112957823](hodoop集群搭建.assets/image-20200624112957823.png)
+![image-20200624112957823](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200624112957823.png)
 
 修改host
 
@@ -35,7 +35,7 @@ hostnamectl  set-hostname  master      #永久修改hostname(立即生效）
 vi /etc/hosts
 ```
 
-![image-20200624113518417](hodoop集群搭建.assets/image-20200624113518417.png)
+![image-20200624113518417](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200624113518417.png)
 
 关闭SELinux
 
@@ -46,7 +46,7 @@ setenforce 0          # 将 SELinux 的状态临时设置为 Permissive 模式�
 vi  /etc/selinux/config   
 ```
 
-![image-20200624113746384](hodoop集群搭建.assets/image-20200624113746384.png)
+![image-20200624113746384](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20200624113746384.png)
 
 修改为这样后重启生效
 

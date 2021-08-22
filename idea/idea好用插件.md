@@ -2,7 +2,7 @@
 
 ## 1.Alibaba Cloud Toolkit
 
-一款高效部署插件![image-20210219152918818](idea好用插件图片/image-20210219152918818.png)
+一款高效部署插件![image-20210219152918818](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210219152918818.png)
 
 todo 备份数据
 
@@ -14,13 +14,13 @@ todo 备份数据
 
 ## 3.EasyYapi
 
-Yapi快速生成规范文档神器![image-20210219152842301](idea好用插件图片/image-20210219152842301.png)
+Yapi快速生成规范文档神器![image-20210219152842301](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210219152842301.png)
 
 快捷键(win)：Alt+Shift+E
 
 ## 4.Translation
 
-快速翻译神器![image-20210219152750925](idea好用插件图片/image-20210219152750925.png)
+快速翻译神器![image-20210219152750925](https://sevenpic.oss-cn-beijing.aliyuncs.com/img/image-20210219152750925.png)
 
 快捷键(win)：Ctrl+Shift+O
 
