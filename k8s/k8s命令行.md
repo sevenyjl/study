@@ -60,3 +60,7 @@
 
 - 
 
+```
+kubectl cp xxx kipf/xxx:x
+```
+
