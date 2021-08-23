@@ -1,3 +1,31 @@
+---
+title: readme
+
+author: seven
+
+avatar: https://sevenpic.oss-cn-beijing.aliyuncs.com/img/seven.jpg
+
+authorLink: yjl.cool
+
+authorAbout: 不懂猫，更不懂开发的人
+
+authorDesc: 
+
+categories: 技术
+
+comments: true
+
+date: 2021-08-23 22:20:28
+
+tags: 
+
+keywords: 
+
+description: null
+
+photos: null
+
+---
 刷法刷图：
 
 知识点学习：https://gitee.com/GTeam_seven/knowledge-points.git
