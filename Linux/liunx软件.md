@@ -1,5 +1,5 @@
 ---
-title: Linux常用软件
+title: liunx软件
 
 author: seven
 

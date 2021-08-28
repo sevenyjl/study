@@ -1,5 +1,5 @@
 ---
-title: Linux常用软件
+title: shell实用命令
 
 author: seven
 

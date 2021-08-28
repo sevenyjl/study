@@ -1,5 +1,5 @@
 ---
-title: shell脚本
+title: shell常用脚本
 
 author: seven
 
