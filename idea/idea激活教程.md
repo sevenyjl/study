@@ -1,3 +1,31 @@
+---
+title: idea激活教程
+
+author: seven
+
+avatar: https://sevenpic.oss-cn-beijing.aliyuncs.com/img/seven.jpg
+
+authorLink: yjl.cool
+
+authorAbout: 不懂猫，更不懂开发的人
+
+authorDesc: 
+
+categories: 技术
+
+comments: true
+
+date: 2021-08-23 22:20:28
+
+tags: 
+
+keywords: 
+
+description: null
+
+photos: null
+
+---
 1. 下载安装idea 省略
 2. 进入idea界面（免费使用30t进入）
 3. 添加插件库：https://plugins.zhile.io

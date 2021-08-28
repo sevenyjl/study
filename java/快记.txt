@@ -1,7 +1,0 @@
-qq邮箱 wddzjgfhtqgvjcdf  
-        account.setHost("smtp.qq.com");
-        account.setPort(25);
-        account.setAuth(true);
-        account.setFrom("1399435579@qq.com");
-        account.setUser("1399435579@qq.com");
-        account.setPass("wddzjgfhtqgvjcdf"); //密码
