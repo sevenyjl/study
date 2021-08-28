@@ -17,13 +17,13 @@ comments: true
 
 date: 2021-08-23 22:20:28
 
-tags: 
+tags: [idea]
 
-keywords: 
+keywords: idea
 
 description: null
 
-photos: null
+photos: https://img0.baidu.com/it/u=2654628357,985762605&fm=26&fmt=auto&gp=0.jpg
 
 ---
 1. 下载安装idea 省略
