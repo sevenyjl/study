@@ -23,7 +23,7 @@ keywords: [linux,shell,脚本]
 
 description: null
 
-photos: https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fs1.51cto.com%2Foss%2F201711%2F10%2F75bb22570b69bd701ea88618853cb37b.jpg-wh_651x-s_741521066.jpg&refer=http%3A%2F%2Fs1.51cto.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1632760442&t=b20fe07342a9ad5f98177bfbc8fd8043
+photos: https://mms0.baidu.com/it/u=3818625632,4145544868&fm=15&gp=0.jpg&fmt=auto
 
 ---
 ## 0.一键免密登录+同步文件

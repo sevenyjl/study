@@ -21,9 +21,8 @@ tags: [idea,插件]
 
 keywords: idea
 
+photos: http://5b0988e595225.cdn.sohucs.com/images/20181027/2b70f032cb584465930a89ebb5e9aec4.jpeg
 description: idea好用插件，持续更新...
-
-photos: https://gimg2.baidu.com/image_search/src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20181027%2F2b70f032cb584465930a89ebb5e9aec4.jpeg&refer=http%3A%2F%2F5b0988e595225.cdn.sohucs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1632762267&t=c2949c3f04a172a7853989f615174fb2
 
 ---
 # Idea好用插件

@@ -23,7 +23,7 @@ keywords: idea
 
 description: idea常用设计技巧
 
-photos: https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.pptjia.com%2Fimage%2F20171027%2F02b26e7ea1989bff63852b6410de5655.jpg&refer=http%3A%2F%2Fimg.pptjia.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1632762574&t=fc0d651dbe26568e90a3732fd1ee0da5
+photos: http://img.pptjia.com/image/20171027/02b26e7ea1989bff63852b6410de5655.jpg
 
 ---
 > 查考设置：https://www.w3cschool.cn/intellij_idea_doc/intellij_idea_doc-lr532e72.html

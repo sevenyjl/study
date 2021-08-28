@@ -23,7 +23,7 @@ keywords: Linux常用软件
 
 description: Linux常用软件收集[持续更新]
 
-photos: https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimhuchao.com%2Fwp-content%2Fuploads%2F2016%2F01%2F8047130eaeb548f99d957d303874d41d-1024x640.png&refer=http%3A%2F%2Fimhuchao.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1632755523&t=2b1174ab9f4f101d466a610be532427b
+photos: http://imhuchao.com/wp-content/uploads/2016/01/8047130eaeb548f99d957d303874d41d-1024x640.png
 ---
 
 ## 1.自定义shell终端提示问题
