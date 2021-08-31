@@ -33,7 +33,7 @@ photos: null
 - 删除所以pods
 
   ```shell
-  kubectl get pods -n kipf | awk '{print $1}' | xargs kubectl delete pods -n kipf
+  kubectl get pods -n default | grep Evicted | awk '{print $1}' | xargs kubectl delete pods -n default
   # -n 指定命名空间, grep 搜索条件
   ```
 
